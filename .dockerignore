@@ -1,6 +1,5 @@
 .DS_Store
 .dockerignore
 .git
-.gitignore
 Dockerfile
 README.md
