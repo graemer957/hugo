@@ -14,3 +14,6 @@ ENV BINARY hugo_${VERSION}_Linux-64bit.deb
 RUN wget https://github.com/spf13/hugo/releases/download/v${VERSION}/${BINARY} && \
          dpkg -i $BINARY && \
          rm -rf $BINARY
+
+ENTRYPOINT ["hugo"]
+CMD ["version"]
