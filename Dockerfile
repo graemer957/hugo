@@ -8,7 +8,7 @@ RUN apt-get -qq update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENV VERSION 0.88.1
+ENV VERSION 0.89.0
 ENV BINARY hugo_${VERSION}_Linux-64bit.deb
 
 RUN wget https://github.com/spf13/hugo/releases/download/v${VERSION}/${BINARY} && \
