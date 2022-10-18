@@ -9,9 +9,9 @@ RUN apt-get -qq update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV VERSION 0.104.3
-ENV BINARY hugo_${VERSION}_Linux-64bit.deb
+ENV BINARY hugo_${VERSION}_linux-amd64.deb
 
-RUN wget https://github.com/spf13/hugo/releases/download/v${VERSION}/${BINARY} && \
+RUN wget https://github.com/gohugoio/hugo/releases/download/v${VERSION}/${BINARY} && \
          dpkg -i $BINARY && \
          rm -rf $BINARY
 
