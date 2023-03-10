@@ -9,7 +9,7 @@ RUN apt-get -qq update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV VERSION 0.111.2
-ENV BINARY hugo_${VERSION}_linux-amd64.deb
+ENV BINARY hugo_extended_${VERSION}_linux-amd64.deb
 
 RUN wget https://github.com/gohugoio/hugo/releases/download/v${VERSION}/${BINARY} && \
          dpkg -i $BINARY && \
